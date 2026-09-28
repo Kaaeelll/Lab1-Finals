@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Info Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>User Info Card</h1>
+      <p class="phrase">Enter Credentials Below.</p>
+
+      <form id="userForm">
+        <section class="form">
+          <label for="fname">Full Name:</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Enter Full Name"
+          /><br />
+        </section>
+        <br />
+
+        <section class="form">
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Email Address"
+          /><br />
+        </section>
+        <br />
+
+        <section class="form">
+          <label for="age">Age:</label><br />
+          <input
+            type="number"
+            id="age"
+            name="age"
+            placeholder="Enter Age"
+          /><br />
+        </section>
+        <br />
+
+        <section class="form">
+          <label for="gender">Gender</label><br />
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="gender" value="Male" />
+              Male
+            </label>
+
+            <label>
+              <input type="radio" name="gender" value="Female" />
+              Female
+            </label>
+
+            <label>
+              <input type="radio" name="gender" value="Other" />
+              Other
+            </label>
+          </div>
+        </section>
+        <br />
+
+        <section class="form">
+          <label for="birthday">Birthday:</label><br />
+          <input type="date" id="birthday" name="birthday" /><br />
+        </section>
+        <br />
+
+        <section class="form">
+          <label for="phonenumber">Phone Number:</label><br />
+          <input
+            type="tel"
+            id="phonenumber"
+            name="phonenumber"
+            placeholder="Enter Phone Number"
+          /><br />
+        </section>
+        <br />
+
+        <section class="form">
+          <label for="nationality">Nationality:</label><br />
+          <input
+            type="text"
+            id="nationality"
+            name="nationality"
+            placeholder="Enter Nationality"
+          /><br />
+        </section>
+        <br />
+
+        <section class="form">
+          <label for="school">School:</label><br />
+          <input
+            type="text"
+            id="school"
+            name="school"
+            placeholder="Enter School"
+          /><br />
+        </section>
+        <br />
+
+        <section class="form">
+          <label for="course">Year And Course:</label><br />
+          <input
+            type="text"
+            id="course"
+            name="course"
+            placeholder="Enter Year And Course"
+          /><br />
+        </section>
+        <br />
+
+        <section class="form">
+          <label for="favoriteColor">Favorite Color:</label>
+
+          <select id="favoriteColor" name="favoriteColor">
+            <option value="">Select a color</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Purple">Purple</option>
+            <option value="Pink">Pink</option>
+          </select>
+        </section>
+        <br />
+
+        <section class="form">
+          <label for="hobby">Favorite Hobby:</label><br />
+          <input
+            type="text"
+            id="hobby"
+            name="hobby"
+            placeholder="Enter Favorite Hobby"
+          /><br />
+        </section>
+        <br />
+
+        <section class="form">
+          <label for="address">Address:</label><br />
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Enter Address"
+          /><br />
+        </section>
+        <br />
+
+        <button type="button" id="showInfo">Show My Info</button>
+      </form>
+      <section id="outputSection">
+        <h2>My Information</h2>
+
+        <div id="output">
+          <p>Your information will appear here.</p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
